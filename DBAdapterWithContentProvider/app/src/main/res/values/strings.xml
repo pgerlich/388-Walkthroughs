@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, TodoList!</string>
+  <string name="app_name">Chapter 7 To-do List</string>
+  <string name="add_new">Add New Item</string>
+  <string name="remove">Remove Item</string>
+  <string name="cancel">Cancel</string>
+    <string name="title_activity_main">MainActivity</string>
+  <string name="yes">Yes</string>
+  <string name="no">No</string>
+  <string name="search">Search</string>
+
+  <string name="moveToMainTitle">Move to Main?</string>
+    <string name="move">Should we move to the other activity?</string>
+
+  <string name="deleteTitle">Delete todo item?</string>
+  <string name="delete">Are you sure you want to delete this item?</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_content_provider">Content Provider</string>
+    <string name="action_cursor_loader">Cursor Loader</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_cursor_loader">CursorLoader</string>
+    <string name="title_activity_cursor_loader_example">CursorLoaderExample</string>
+    <string name="title_activity_async_tasktivity">AsyncTasktivity</string>
+    <string name="action_async">Async Tasks</string>
+    <string name="action_BG_Service">BG Service</string>
+    <string name="title_activity_handler_looper">HandlerLooper</string>
+    <string name="action_settings">Settings</string>
+</resources>

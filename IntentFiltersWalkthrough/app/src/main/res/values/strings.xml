@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IntentFilters</string>
+
+    <string name="awesome_stuff">Welcome to my awesome activity. Home of the awesome activities.</string>
+    <string name="action_settings">Settings</string>
+    <string name="callPhone">Call Phone</string>
+    <string name="NavigateSite">Navigate to Site</string>
+    <string name="NavigateMaps">Navigate Via Map</string>
+    <string name="title_activity_my_awesome">MyAwesomeActivity</string>
+    <string name="awesome_act">Open Explicity Activity</string>
+    <string name="chooser_title">Pick a browser</string>
+    <string name="title_activity_custom_browser">CustomBrowserActivity</string>
+
+    <string name="browser_msg">Aint nobody got time fo dat</string>
+</resources>

@@ -1,0 +1,103 @@
+<com.example.gesturesactionbarnotifications.CustomViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/main_view">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:id="@+id/one">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/not_title"
+            android:layout_weight="1"
+            android:text="title" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/not_msg"
+            android:layout_weight="1"
+            android:text="message" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/one"
+        android:id="@+id/two">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send_notification"
+            android:id="@+id/button"
+            android:onClick="sendNotificationButton" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send_progress_notification"
+            android:id="@+id/button4"
+            android:onClick="setProgressNotification" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/three">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_enter_not_id"
+                android:id="@+id/textView"
+                android:layout_weight="3"/>
+
+            <Spinner
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/not_id" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/four">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_expand_notification"
+                android:id="@+id/button2"
+                android:onClick="expandNotification"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="true" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_remove_notification"
+                android:id="@+id/button3"
+                android:onClick="removeNotification"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.example.gesturesactionbarnotifications.CustomViewGroup>

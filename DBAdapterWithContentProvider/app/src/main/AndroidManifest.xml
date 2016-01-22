@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.paad.todolist"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:enabled="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.dbadapterwithcontentprovider.ToDoList"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.dbadapterwithcontentprovider.SearchActivity"
+            android:label="SearchActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <!-- TODO: Need to set intent filter on activity that handles searches -->
+        </activity>
+        <activity
+            android:name="com.example.dbadapterwithcontentprovider.MainActivity"
+            android:label="@string/title_activity_main" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchActivity" />
+        </activity>
+
+        <provider
+            android:name="com.example.dbadapterwithcontentprovider.ContentProvider.ToDoProvider"
+            android:authorities="com.example.dbadapterwithcontentprovider.provider"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.example.dbadapterwithcontentprovider.READ"
+            android:writePermission="com.example.dbadapterwithcontentprovider.WRITE" />
+
+        <activity
+            android:name="com.example.dbadapterwithcontentprovider.CursorLoaderExample"
+            android:label="@string/title_activity_cursor_loader_example" >
+        </activity>
+        <activity
+            android:name="com.example.dbadapterwithcontentprovider.AsyncTasktivity"
+            android:label="@string/title_activity_async_tasktivity" >
+        </activity>
+
+        <service
+            android:name="com.example.dbadapterwithcontentprovider.FullService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="com.example.dbadapterwithcontentprovider.BackgroundCounter"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

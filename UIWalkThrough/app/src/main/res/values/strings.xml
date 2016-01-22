@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UIWalkThrough</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_button">Start!</string>
+    <string name="show_count">Showing..</string>
+    <string name="bill_murray">Murray Me!</string>
+</resources>

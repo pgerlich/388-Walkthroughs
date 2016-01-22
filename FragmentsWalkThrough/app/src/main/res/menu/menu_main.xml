@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:icon="@drawable/plus"
+        android:id="@+id/action_addItem"
+        android:title="Add Item"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/dialog"
+        android:id="@+id/action_show_dialog"
+        android:title="Show Dialog"
+        app:showAsAction="always" />
+</menu>

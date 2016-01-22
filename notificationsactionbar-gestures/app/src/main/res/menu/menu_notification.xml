@@ -1,0 +1,74 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.gesturesactionbarnotifications.NotificationActivity">
+
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/action_settings1"
+        android:title="@string/settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/action_settings2"
+        android:title="@string/settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/action_settings3"
+        android:title="@string/settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/action_settings4"
+        android:title="@string/settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/action_settings11"
+        android:title="@string/settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/action_settings22"
+        android:title="@string/settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/action_settings33"
+        android:title="@string/settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/action_settings44"
+        android:title="@string/settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TODO: Headers for ONLY embedded preference screens
+    <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+        <header
+            android:fragment="com.example.filesandpreferences.SomeOtherFragment"
+            android:title="Embedded Settings Activity"
+            android:summary="^ That" />
+     </preference-headers> -->
+
+    <PreferenceCategory
+        android:title="Relevant Stuff" >
+        <CheckBoxPreference
+            android:title="Bold Title"
+            android:summary="Bold the title of books"
+            android:key="boldTitle"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            android:title="Book beginning"
+            android:summary="The default first line of a book"
+            android:key="firstLine"
+            android:defaultValue="In a hole in the ground there lived a hobbit." />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Imported Prefernces">
+        <PreferenceScreen
+            android:title="Imported">
+            <intent android:action="android.settings.DISPLAY_SETTINGS "/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Other Examples">
+        <PreferenceScreen
+            android:key="button_voicemail_setting_key"
+            android:title="Other cool stuff"
+            android:persistent="false" >
+
+            <CheckBoxPreference
+                android:title="Vote for Donald Trump"
+                android:summary="Whether you will vote for donald trump automatically"
+                android:defaultValue="false" />
+
+        </PreferenceScreen>
+
+        <!-- TODO: Preference for web page -->
+        <Preference android:title="Open google" >
+                <intent android:action="android.intent.action.VIEW"
+                android:data="http://www.google.com" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

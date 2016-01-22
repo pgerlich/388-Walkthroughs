@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/Activitylifecycle-backstack" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UIWalkThrough" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/adapterswalkthrough" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/notificationsactionbar-gestures" vcs="Git" />
+  </component>
+</project>
