@@ -31,7 +31,7 @@ public class Wut extends ActionBarActivity {
     EditText displayEditor;
     TextView display;
     int count;
-    String password = "Thi23451aSDw1daspodiwo4$@#$!!"
+    String password = "Thi23451aSDw1daspodiwo4$@#$!!!"
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
